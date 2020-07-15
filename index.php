@@ -9,7 +9,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Aplikasi Generate User Hotspot Mikrotik</title>
+    <title>Sistema generador de usuarios Hotspot Mikrotik</title>
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
@@ -43,7 +43,7 @@
                     </li>
                     
                 </ul>
-                <a class="brand" href="index.php"><span class="first">Aplikasi Generate User Hotspot</span> <span class="second">Mikrotik</span></a>
+                <a class="brand" href="index.php"><span class="first">Sistema generador de usuarios Hotspot</span> <span class="second">Mikrotik</span></a>
             </div>
         </div>
     </div>
@@ -54,26 +54,26 @@
         <div class="row-fluid">
             <div class="span3">
                 <div class="sidebar-nav">
-                  <div class="nav-header" data-toggle="collapse" data-target="#dashboard-menu"><i class="icon-user"></i>Generate User Hotspot</div>
+                  <div class="nav-header" data-toggle="collapse" data-target="#dashboard-menu"><i class="icon-user"></i>Generar usuario Hotspot</div>
                     <ul id="dashboard-menu" class="nav nav-list collapse in">
-                        <li><a href="index.php?halaman=daftar_user_hotspot">Daftar User Hotspot</a></li>
-                        <li ><a href="index.php?halaman=daftar_user_aktif">Daftar User Sedang Aktif</a></li>
-                        <li ><a href="index.php?halaman=generate_user_hotspot">Generate User Hotspot</a></li>
-						<li ><a href="index.php?halaman=tambah_user_hotspot">Tambah User Hotspot</a></li>
+                        <li><a href="index.php?halaman=daftar_user_hotspot">Lista de usuarios Hotspot</a></li>
+                        <li ><a href="index.php?halaman=daftar_user_aktif">Lista de usuarios actualmente activos</a></li>
+                        <li ><a href="index.php?halaman=generate_user_hotspot">Generar usuario Hotspot</a></li>
+						<li ><a href="index.php?halaman=tambah_user_hotspot">Agregar Usuario Hotspot</a></li>
                     </ul>
 
-                <div class="nav-header" data-toggle="collapse" data-target="#settings-menu"><i class="icon-dashboard"></i>Group Limit Bandwidth Hotspot</div>
+                <div class="nav-header" data-toggle="collapse" data-target="#settings-menu"><i class="icon-dashboard"></i>Punto de acceso de ancho de banda de límite de grupo</div>
                 <ul id="settings-menu" class="nav nav-list collapse in">
-                  <li ><a href="index.php?halaman=tambah_group_limitasi">Tambah Group Limitasi Bandwidth</a></li>
-                  <li ><a href="index.php?halaman=daftar_group_limitasi">Daftar Group Limitasi Bandwidth</a></li>
+                  <li ><a href="index.php?halaman=tambah_group_limitasi">Agregar grupo de límite de ancho de banda</a></li>
+                  <li ><a href="index.php?halaman=daftar_group_limitasi">Lista de grupos de limitación de ancho de banda</a></li>
                 </ul>
 				
-				<div class="nav-header" data-toggle="collapse" data-target="#accounts-menu"><i class="icon-wrench"></i>Extra Menu</div>
+				<div class="nav-header" data-toggle="collapse" data-target="#accounts-menu"><i class="icon-wrench"></i>Menú extra</div>
                 <ul id="accounts-menu" class="nav nav-list collapse in">
-                  <li ><a href="index.php?halaman=daftar_user_mikrotik">Daftar User Mikrotik</a></li>
-                  <li ><a href="index.php?halaman=edit_password_mikrotik">Edit Password Mikrotik</a></li>
-                  <li ><a href="index.php?halaman=edit_identity_mikrotik">Edit Identity Mikrotik</a></li>
-                  <li ><a href="#ModalReboot" role="button" data-toggle="modal">Reboot Mikrotik</a></li>
+                  <li ><a href="index.php?halaman=daftar_user_mikrotik">Lista de usuarios Mikrotik</a></li>
+                  <li ><a href="index.php?halaman=edit_password_mikrotik">Editar contraseña Mikrotik</a></li>
+                  <li ><a href="index.php?halaman=edit_identity_mikrotik">Editar identidad Mikrotik</a></li>
+                  <li ><a href="#ModalReboot" role="button" data-toggle="modal">Reiniciar Mikrotik</a></li>
                 </ul>
 
 
@@ -109,8 +109,8 @@
     
     <footer>
         <hr>
-        <p class="pull-right">Aplikasi Generate User Hotspot Mikrotik</p>
-        <p>Developed By <a href="#">Mahasiswa STMIK Bumigora Mataram</a></p>
+        <p class="pull-right">Sistema generador de usuarios Hotspot Mikrotik</p>
+        <p>Traducido por <a href="#">eCituk</a></p>
     </footer>
 
     <script src="lib/bootstrap/js/bootstrap.js"></script>

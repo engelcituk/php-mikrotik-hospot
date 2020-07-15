@@ -1,10 +1,14 @@
 # mikrotik-php-api-hotspot-user-generator
-Hotspot User Generator Mikrotik PHP API
+Generador de usuario hotspot con API Mikrotik PHP 
 
-Aplikasi manajemen user hotspot menggunakan Mikrotik PHP API. Memiliki kemampuan sbb:
+Aplicación de gestión de usuarios hotspot que utiliza la API Mikrotik PHP. Tiene las siguientes capacidades:
 
-1. Dapat membuat sebuah dan melakukan generate user hotspot melalui interface aplikasi
-2. Dapat memanagement bandwdith user melalui interface aplikasi
-3. Dapat mengatur waktu akses ke jaringan hotspot melalui antarmuka aplikasi
-4. Mencetak user yang telah digenerate menjadi file *.pdf
-5. mengeksport user yang telah di generate menjadi file excel (*.xls)
+1. Puede crear y generar usuario hotspot a través de la interfaz de la aplicación
+2. Puede administrar el ancho de banda del usuario a través de la interfaz de la aplicación
+3. Puede configurar el tiempo de acceso a la red de hotspot a través de la interfaz de la aplicación
+4. Imprima el usuario que se ha generado en un archivo * .pdf
+5. exportar el usuario que se ha generado en un archivo de Excel (*. Xls)
+
+
+
+

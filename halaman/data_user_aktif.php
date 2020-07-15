@@ -3,7 +3,7 @@
 	$a = $API->read(); 
 ?>
 <div class="span9">
-            <h3 class="page-title">Daftar User Hotspot Sedang Aktif</h3>
+            <h3 class="page-title">Lista de usuarios de Hotspot actualmente activos</h3>
 
 <div class="well">
 <?php if (count($a)>=1) {?>
@@ -37,7 +37,7 @@
 		?>
       </tbody>
     </table>
-	<?php } else {echo "<b style='color:red'>Tidak ada user hotspot yang sedang aktif <a href='index.php' title='Klik Untuk Kembali ke Halaman Utama'>Kembali</a></b>";} ?>
+	<?php } else {echo "<b style='color:red'>No hay usuario hotspot que esté actualmente activo <a href='index.php' title='Klik Untuk Kembali ke Halaman Utama'>Volver</a></b>";} ?>
 </div>
 
 </div>
