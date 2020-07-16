@@ -26,26 +26,26 @@ $jnoc(document).ready(function(){
 					},
 				messages: {
 				    puser: {
-						required : "Panjang Nama User Harus dipilih"
+						required : "Longitud del nombre de usuario debe seleccionarse"
 					},
 				    glimit: {
-						required : "Group Limit Bandwidth Harus dipilih"
+						required : "Se debe seleccionar el grupo de ancho de banda límite"
 					},				    
 					ppass: {
-						required : "Panjang Password Harus dipilih"
+						required : "Se debe seleccionar la longitud de la contraseña"
 					},					
 					lwaktu: {
-						required : "Limit Waktu Harus diisi",
-						digits : "Limit Waktu Harus angka"
+						required : "Límite de tiempo debe completarse",
+						digits : "Límite de tiempo debe ser un número"
 					},
 					satuan: {
-						required : "Satuan Harus dipilih"
+						required : "Una unidad de tiempo debe ser seleccionada"
 					},
 					juser: {
-						required : "Jumlah User Harus dipilih"
+						required : "El número de usuarios debe de seleccionarse"
 					},
 				    ket: {
-						required : "Keterangan Harus diisi"
+						required : "La sección de información debe ser completada"
 					}					
 				},
 				submitHandler: function(form) {
@@ -67,15 +67,15 @@ $jnoc(document).ready(function(){
 					chache: false,
 					success : function(respon){
 					if (respon==1){
-					$jnoc("#puser").val("-- Pilih --");
-					$jnoc("#ppass").val("-- Pilih --");
-					$jnoc("#glimit").val("-- Pilih --");
-					$jnoc("#juser").val("-- Pilih --");
-					$jnoc("#satuan").val("-- Pilih --");
+					$jnoc("#puser").val("-- Seleccione --");
+					$jnoc("#ppass").val("-- Seleccione --");
+					$jnoc("#glimit").val("-- Seleccione --");
+					$jnoc("#juser").val("-- Seleccione --");
+					$jnoc("#satuan").val("-- Seleccione --");
 					$jnoc("#ket").val("");
 					$jnoc("#lwaktu").val("");
 					$jnoc("#lproses").hide();
-					$jnoc('.error-text').text("Data User Hotspot Sebanyak "+juser+" Buah Berhasil DIGENERATE.");  
+					$jnoc('.error-text').text("La generación de datos de "+juser+" usuarios Hotspot fue exitosa.");  
 					$jnoc("#myModal").modal("show");
 					} else if (respon==0) {
 					$jnoc("#lproses").hide();

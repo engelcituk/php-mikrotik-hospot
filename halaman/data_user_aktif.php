@@ -37,7 +37,7 @@
 		?>
       </tbody>
     </table>
-	<?php } else {echo "<b style='color:red'>No hay usuario hotspot que esté actualmente activo <a href='index.php' title='Klik Untuk Kembali ke Halaman Utama'>Volver</a></b>";} ?>
+	<?php } else {echo "<b style='color:red'>No hay usuario hotspot que esté actualmente activo <a href='index.php' title='Haga clic para volver a la página principal'>Volver</a></b>";} ?>
 </div>
 
 </div>

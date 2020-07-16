@@ -14,7 +14,7 @@ $jnoc(document).ready(function(){
 					location.reload();
 				} else {
 					$jnoc("#lprosesh").hide();
-					$jnoc('.error-text').text("ada kesalahan saat proses hapus. cobalah beberapa saat lagi!"); 
+					$jnoc('.error-text').text("Hubo un error durante el proceso de eliminación. !Inténtalo de nuevo más tarde!"); 
 					exit();	
 				}
 				}
@@ -29,7 +29,7 @@ $jnoc(document).ready(function(){
 		var isi = $jnoc(this);
 		var id = isi.attr("id");
 		var nama = isi.attr("svn");
-		$jnoc('.error-text').text("anda yakin akan menghapus user '"+nama+"' ini?"); 
+		$jnoc('.error-text').text("¿Estás seguro de eliminar a este usuario '"+nama+"' ?"); 
 		$jnoc("#hapus").show(); 
 		$jnoc("#idnya").val(id);  			
 		$jnoc("#myModal").modal("show");	
@@ -165,7 +165,7 @@ $jnoc(document).ready(function(){
 		var isi = $jnoc(this);
 		var id = isi.attr("id");
 		var nama = isi.attr("svn");
-		$jnoc('.error-text').text("Estás seguro de restablecer el contador del usuario'"+nama+"' Si elimina el contador, el usuario puede iniciar sesión nuevamente si el límite de tiempo se ha agotado."); 
+		$jnoc('.error-text').text("Estás seguro de restablecer el contador del usuario '"+nama+"' Si elimina el contador, el usuario puede iniciar sesión nuevamente si el límite de tiempo se ha agotado."); 
 		$jnoc("#cc").show(); 
 		$jnoc("#idc").val(id);  
 		$jnoc("#myModal").modal("show");

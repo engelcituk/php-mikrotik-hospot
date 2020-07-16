@@ -58,7 +58,7 @@
                     <ul id="dashboard-menu" class="nav nav-list collapse in">
                         <li><a href="index.php?halaman=daftar_user_hotspot">Lista de usuarios Hotspot</a></li>
                         <li ><a href="index.php?halaman=daftar_user_aktif">Lista de usuarios actualmente activos</a></li>
-                        <li ><a href="index.php?halaman=generate_user_hotspot">Generar usuario Hotspot</a></li>
+                        <li ><a href="index.php?halaman=generate_user_hotspot">Generar usuarios Hotspot</a></li>
 						<li ><a href="index.php?halaman=tambah_user_hotspot">Agregar Usuario Hotspot</a></li>
                     </ul>
 
