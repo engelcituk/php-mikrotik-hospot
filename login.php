@@ -55,7 +55,7 @@
                     <input type="password" id="pass" name="pass" class="span12">
 					
 					<img src="images/loading.gif" id="lproses" class="load pull-right" style="padding-top:5px">
-					<input type="submit" name="submit" value="Login" id="masuk" class="btn btn-primary pull-right"/>
+					<input type="submit" name="submit" value="Iniciar sesión" id="masuk" class="btn btn-primary pull-right"/>
 					
                     <a href="#myModal" role="button" data-toggle="modal" id="login" class="btn load btn-primary pull-right">Iniciar sesión</a>      
 					<div class="clearfix"></div>
