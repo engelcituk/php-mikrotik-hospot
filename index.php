@@ -36,7 +36,7 @@
                         </a>
 
                         <ul class="dropdown-menu">
-                            <li><a tabindex="-1" href="index.php?pagina=profile">Perfil usuario</a></li>
+                            <li><a tabindex="-1" href="index.php?pagina=perfil">Perfil de usuario</a></li>
                             <li class="divider"></li>
                             <li><a tabindex="-1" href="logout.php">Salir</a></li>
                         </ul>
@@ -99,7 +99,7 @@
 			case "editar-password-mikrotik" : include "pagina/edit_password_mikrotik.php"; break;
 			case "editar-identidad-mikrotik" : include "pagina/edit_identity_mikrotik.php"; break;
 			case "reboot_mikrotik" : include "pagina/reboot_mikrotik.php"; break;
-			case "profile" : include "pagina/profile.php"; break;
+			case "perfil" : include "pagina/profile.php"; break;
 			default : include "pagina/utama.php"; break;
 			}
 			}

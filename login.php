@@ -49,9 +49,9 @@
 				
 					<label>Dirección Ip</label>
                     <input type="text" id="ip" name="ip" class="required span12">
-                    <label>Username</label>
+                    <label>Nombre de usuario</label>
                     <input type="text" id="user" name="user" class="required span12">
-                    <label>Password</label>
+                    <label>Contraseña</label>
                     <input type="password" id="pass" name="pass" class="span12">
 					
 					<img src="images/loading.gif" id="lproses" class="load pull-right" style="padding-top:5px">
