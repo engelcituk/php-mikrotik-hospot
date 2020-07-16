@@ -7,7 +7,7 @@ $jnoc(document).ready(function(){
 					},
 				messages: {
 				    iden: {
-						required : "Identity Harus diisi"
+						required : "La identidad debe ser completada"
 					}    
 				},
 				submitHandler: function(form) {
@@ -24,11 +24,11 @@ $jnoc(document).ready(function(){
 					success : function(respon){
 					if (respon==1){
 					$jnoc("#lproses").hide();
-					$jnoc('.error-text').text("Identity Mikrotik SUKSES diganti");  
+					$jnoc('.error-text').text("Identidad del Mikrotik reemplazada exitosamente ");  
 					$jnoc("#myModal").modal("show");
 					} else if (respon==0) {
 					$jnoc("#lproses").hide();
-					$jnoc('.error-text').text("Identity Mikrotik GAGAL diganti");  
+					$jnoc('.error-text').text("Fallo en el cambio de identidad del Mikrotik");  
 					$jnoc("#myModal").modal("show");
 					
 					}
