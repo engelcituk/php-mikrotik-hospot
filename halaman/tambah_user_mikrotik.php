@@ -35,14 +35,14 @@
 <div class="modal small hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Perhatian</h3>
+    <h3 id="myModalLabel">Atención</h3>
   </div>
   <div class="modal-body">
     
     <p class="error-text"></p>
   </div>
   <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Tutup</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
   </div>
 </div>
 

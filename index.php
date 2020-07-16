@@ -118,15 +118,15 @@
  <div class="modal small hide fade" id="ModalReboot" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3 id="myModalLabel">Reboot Mikrotik</h3>
+    <h3 id="myModalLabel">Reiniciar Mikrotik</h3>
   </div>
   <div class="modal-body">
     
-    <p class="error-text"><i class="icon-warning-sign modal-icon"></i>Anda yakin akan Me-Reboot Mikrotik ?</p>
+    <p class="error-text"><i class="icon-warning-sign modal-icon"></i>¿Estás seguro de reiniciar el Mikrotik?</p>
   </div>
   <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">Batal</button>
-    <button class="btn btn-danger" id="reboot" data-dismiss="modal">Ya!</button>
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancelar</button>
+    <button class="btn btn-danger" id="reboot" data-dismiss="modal">¡Reiniciar!</button>
   </div>
 </div>
   <script src="aksi/js/reboot/reboot.js"></script>

@@ -10,10 +10,10 @@ $jnoc(document).ready(function(){
 					},
 				messages: {
 				    ip: {
-						required : "IP Address Harus diisi!"
+						required : "La dirección ip es requeridad"
 					},
 					user: {
-						required : "Nama User Harus diisi!"
+						required : "El nombre de usuario es requerida!"
 					}    
 				},
 				submitHandler: function(form) {
@@ -35,7 +35,7 @@ $jnoc(document).ready(function(){
 					window.location.href="index.php";
 					} else if (respon==0) {
 					$jnoc("#lproses").hide();
-					$jnoc('.error-text').text("Koneksi Ke Mikrotik GAGAL! Periksa Koneksi dengan Router atau Username/Password Mungkin Kurang Tepat!");  
+					$jnoc('.error-text').text("¡La conexión al Mikrotik FALLÓ! Verifique la conexión con el enrutador o el nombre de usuario/contraseña ¡Quizás no sean correctos!");  
 					$jnoc("#myModal").modal("show");
 					
 					}
