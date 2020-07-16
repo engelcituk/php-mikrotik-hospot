@@ -20,13 +20,13 @@
 	$uh = $API->read(); 
 ?>
 <div class="span9">
-            <h3 class="page-title">Daftar User Hotspot Mikrotik (<?php echo count($uh)." Buah"; ?>)</h3>
+            <h3 class="page-title">Lista de Usuarios Hotspot Mikrotik (<?php echo count($uh)." Elementos"; ?>)</h3>
 <?php if (count($uh)>=1) {?>
 <div class="btn-toolbar">
-    <button class="btn btn-primary export"> Export User (*.xls)</button>
-    <button class="btn cetak">Cetak User (*.pdf)</button>
-    <button class="btn btn-danger resetc">Clear Counter</button>
-    <button class="btn btn-warning hapussuser">Hapus Semua User</button>
+    <button class="btn btn-primary export"> Exportar Usuarios (*.xls)</button>
+    <button class="btn cetak">Impresión de Usuarios (*.pdf)</button>
+    <button class="btn btn-danger resetc">Limpiar contador</button>
+    <button class="btn btn-warning hapussuser">Eliminar todos los usuarios</button>
 	<img src="images/loading.gif" id="lprosesc" class="load" style="padding-left:10px">
   <div class="btn-group">
   </div>
@@ -37,7 +37,7 @@
 <div class="modal small hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="myModalLabel">Konfirmasi</h3>
+        <h3 id="myModalLabel">Confirmación</h3>
     </div>
     <div class="modal-body">
 		<input type="hidden" id="idnya" name="idnya"/>
@@ -45,11 +45,11 @@
         <p class="error-text"></p>
     </div>
     <div class="modal-footer">
-        <button class="btn" data-dismiss="modal" aria-hidden="true">Batal</button>
-        <button class="btn btn-danger" id="hapus">Hapus!</button>
-        <button class="btn btn-danger" id="cc">Hapus Counter!</button>
-        <button class="btn btn-danger" id="hapuss">Ya. Hapus Semua!</button>
-        <button class="btn btn-danger" id="resetc">Ya. Reset Counter!</button>
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancelar</button>
+        <button class="btn btn-danger" id="hapus">Eliminar!</button>
+        <button class="btn btn-danger" id="cc">Eliminar Contador!</button>
+        <button class="btn btn-danger" id="hapuss">Sí, Eliminar todos!</button>
+        <button class="btn btn-danger" id="resetc">Sí, Reiniciar contador!</button>
 		<img src="images/loading.gif" id="lprosesh" class="load"/>
     </div>
 </div>
@@ -61,13 +61,13 @@
       <thead>
         <tr>
           <th>No</th>
-          <th>Nama User</th>
-          <th>Password</th>
-          <th>Limit Waktu</th>
-          <th>Group Limit Bandwidth</th>
-          <th>Keterangan</th>
-          <th>Uptime</th>
-          <th style="width: 26px;">Aksi</th>
+          <th>Nombre de Usuario</th>
+          <th>Contraseña</th>
+          <th>Tiempo limite</th>
+          <th>Ancho de banda de límite de grupo</th>
+          <th>Información</th>
+          <th>Tiempo de actividad</th>
+          <th style="width: 26px;">Acciones</th>
         </tr>
       </thead>
       <tbody>

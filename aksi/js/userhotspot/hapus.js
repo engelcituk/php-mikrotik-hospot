@@ -40,7 +40,7 @@ $jnoc(document).ready(function(){
 		$jnoc("#hapus").hide();
 		$jnoc("#resetc").hide();
 		$jnoc("#cc").hide();
-		$jnoc('.error-text').text("anda yakin akan menghapus semua data user hotspot? jika data lebih dari 500 Buah akan dilakukan secara bertahap."); 
+		$jnoc('.error-text').text("¿Está seguro de que desea eliminar todos los datos del punto de acceso del usuario? si los datos son más de 500 elementos se realizarán por etapas."); 
 		$jnoc("#hapuss").show(); 		
 		$jnoc("#myModal").modal("show");	
 	});
@@ -59,7 +59,7 @@ $jnoc(document).ready(function(){
 					location.reload();
 				} else {
 					$jnoc("#lprosesh").hide();
-					$jnoc('.error-text').text("ada kesalahan saat proses hapus. cobalah beberapa saat lagi!"); 
+					$jnoc('.error-text').text("Hubo un error durante el proceso de eliminación. ¡Inténtalo de nuevo más tarde!"); 
 					exit();	
 				}
 				}
@@ -72,7 +72,7 @@ $jnoc(document).ready(function(){
 		$jnoc("#hapus").hide();
 		$jnoc("#hapuss").hide();
 		$jnoc("#cc").hide();
-		$jnoc('.error-text').text("anda yakin akan menghapus counter user hotspot? jika anda menghapus counter, user yg sudah sampai limit waktu dapat login kembali"); 
+		$jnoc('.error-text').text("¿Está seguro de que desea eliminar el contador de usuarios de puntos de acceso? Si elimina el contador, los usuarios que hayan alcanzado el límite de tiempo pueden iniciar sesión nuevamente"); 
 		$jnoc("#resetc").show(); 		
 		$jnoc("#myModal").modal("show");	
 	});
@@ -90,7 +90,7 @@ $jnoc(document).ready(function(){
 					location.reload();
 				} else {
 					$jnoc("#lprosesh").hide();
-					$jnoc('.error-text').text("ada kesalahan saat proses Reset Counter. cobalah beberapa saat lagi!"); 
+					$jnoc('.error-text').text("Se produjo un error durante el proceso de reinicio del contador. ¡Inténtalo de nuevo más tarde!"); 
 					exit();	
 				}
 				}
@@ -120,7 +120,7 @@ $jnoc(document).ready(function(){
 					$jnoc("#hapuss").hide();
 					$jnoc("#resetc").hide();
 					$jnoc("#cc").hide();
-					$jnoc('.error-text').text("ada kesalahan saat proses export. cobalah beberapa saat lagi");  		
+					$jnoc('.error-text').text("Hubo un error durante el proceso de exportación. ¡Inténtalo de nuevo más tarde!");  		
 					$jnoc("#myModal").modal("show");
 				}
 				}
@@ -150,7 +150,7 @@ $jnoc(document).ready(function(){
 					$jnoc("#hapuss").hide();
 					$jnoc("#resetc").hide();
 					$jnoc("#cc").hide();
-					$jnoc('.error-text').text("ada kesalahan saat proses export. cobalah beberapa saat lagi");  		
+					$jnoc('.error-text').text("Hubo un error durante el proceso de exportación. ¡Inténtalo de nuevo más tarde!");  		
 					$jnoc("#myModal").modal("show");
 				}
 				}
@@ -165,7 +165,7 @@ $jnoc(document).ready(function(){
 		var isi = $jnoc(this);
 		var id = isi.attr("id");
 		var nama = isi.attr("svn");
-		$jnoc('.error-text').text("anda yakin akan mereset counter user '"+nama+"' ini? jika anda menghapus counter, user dapat login kembali jika limit waktu telah habis"); 
+		$jnoc('.error-text').text("Estás seguro de restablecer el contador del usuario'"+nama+"' Si elimina el contador, el usuario puede iniciar sesión nuevamente si el límite de tiempo se ha agotado."); 
 		$jnoc("#cc").show(); 
 		$jnoc("#idc").val(id);  
 		$jnoc("#myModal").modal("show");
@@ -185,7 +185,7 @@ $jnoc(document).ready(function(){
 					location.reload();
 				} else {
 					$jnoc("#lprosesh").hide();
-					$jnoc('.error-text').text("ada kesalahan saat proses Reset Counter. cobalah beberapa saat lagi!"); 
+					$jnoc('.error-text').text("Se produjo un error durante el proceso de reinicio del contador. ¡sInténtalo de nuevo más tarde!"); 
 					exit();	
 				}
 				}
