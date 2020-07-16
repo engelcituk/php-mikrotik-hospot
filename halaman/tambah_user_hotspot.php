@@ -5,7 +5,7 @@
 		$judul = "Edit";
 		$id = $_GET['id'];
 		$aksi = "update";
-		$button = "Update";
+		$button = "Actualizar";
 	    $API->write("/ip/hotspot/user/print",false);   
 	    $API->write("?.id=".$id,true);   
 	    $p = $API->read(); 

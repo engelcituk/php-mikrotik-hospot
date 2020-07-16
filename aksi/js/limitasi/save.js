@@ -18,18 +18,18 @@ $jnoc(document).ready(function(){
 					},
 				messages: {
 				    nama: {
-						required : "Nama Harus diisi"
+						required : "Nombre debe ser llenado"
 					},
 				    share: {
-						required : "Shared User Harus diisi",
-						digits : "Shared user harus angka"
+						required : "El usuario compartido debe completarse",
+						digits : "Los usuarios compartidos deben ser números"
 					},				    
 					limit: {
-						required : "Limit Bandwidth Harus diisi",
-						digits : "Limit Bandwidth Harus angka misal : 128/256/512"
+						required : "Límite de ancho de banda debe llenarse",
+						digits : "Límite de ancho de banda debe ser un número, por ejemplo: 128/256/512"
 					},
 				    satuan: {
-						required : "Satuan Harus dipilih"
+						required : "Una unidad de la lista debe ser seleccionada"
 					}					
 				},
 				submitHandler: function(form) {
@@ -54,11 +54,11 @@ $jnoc(document).ready(function(){
 					$jnoc("#satuan").val("-- Pilih --");
 					$jnoc("#limit").val("");
 					$jnoc("#lproses").hide();
-					$jnoc('.error-text').text("Data Group Limitasi Berhasil disimpan.");  
+					$jnoc('.error-text').text("Grupo de límite de ancho de banda Hotspot guardado exitosamente");  
 					$jnoc("#myModal").modal("show");
 					} else if (respon==0) {
 					$jnoc("#lproses").hide();
-					$jnoc('.error-text').text("Group Limitasi GAGAL disimpan");  
+					$jnoc('.error-text').text("Guardado FALLIDO del Grupo de limitación.");  
 					$jnoc("#myModal").modal("show");
 					
 					}
