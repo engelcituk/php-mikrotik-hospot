@@ -27,10 +27,10 @@ $jnoc(document).ready(function(){
 		var id = isi.attr("id");
 		var nama = isi.attr("svn");
 		if (id=="*1"){ 
-		$jnoc('.error-text').text("Maaf, user '"+nama+"' tidak boleh dihapus"); 
+		$jnoc('.error-text').text("Lo sentimos, el usuario '"+nama+"' no se puede eliminar"); 
 		$jnoc("#hapus").hide(); 
 		} else { 
-		$jnoc('.error-text').text("anda yakin akan menghapus user '"+nama+"' ini?"); 
+		$jnoc('.error-text').text("¿Está seguro de que desea eliminar al usuario '"+nama+"'?"); 
 		$jnoc("#hapus").show(); 
 		}
 		$jnoc("#idnya").val(id);  			

@@ -36,9 +36,9 @@
                         </a>
 
                         <ul class="dropdown-menu">
-                            <li><a tabindex="-1" href="index.php?halaman=profile">Profile User</a></li>
+                            <li><a tabindex="-1" href="index.php?halaman=profile">Perfil usuario</a></li>
                             <li class="divider"></li>
-                            <li><a tabindex="-1" href="logout.php">Logout</a></li>
+                            <li><a tabindex="-1" href="logout.php">Salir</a></li>
                         </ul>
                     </li>
                     
