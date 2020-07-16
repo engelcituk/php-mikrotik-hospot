@@ -3,28 +3,28 @@
 	   $g = $API->read(); 
 	?>
 <div class="span9">
-       <h3 class="page-title">Tambah User Mikrotik</h3>
+       <h3 class="page-title">Añadir usuario Mikrotik</h3>
 <div class="well">
 
     <form id="user" method="post" action="">
-        <label>Nama User</label>
+        <label>Nombre de usuario </label>
         <input type="text" id="nama" name="nama" class="input-xlarge required">
         <label>Group</label>
         <select name="group" id="group" class="input-large warna required">
-			<option value="">-- Pilih --</option>
+			<option value="">-- Seleccionar --</option>
 		<?php foreach($g as $tampil){ ?> 
 			<option value="<?php echo $tampil['name'];?>"><?php echo $tampil['name']; ?></option>
 		<?php } ?>
 		</select>
-        <label>Password</label>
+        <label>Contraseña</label>
         <input type="password" id="pass" name="pass" class="input-large required">
-        <label>Keterangan</label>
+        <label>Información</label>
         <textarea id="ket" name="ket" rows="3" class="required"></textarea>
 		
         <div style="padding-top:20px">
-           <input class="btn btn-primary" id="simpan" type="submit" value="Simpan User">
+           <input class="btn btn-primary" id="simpan" type="submit" value="Guardar usuario">
             <img src="images/loading.gif" id="lproses" class="load"/>
-			<button class="btn"><a href="index.php?halaman=daftar_user_mikrotik" style="color:black">Kembali</a></button>
+			<button class="btn"><a href="index.php?halaman=daftar_user_mikrotik" style="color:black">Volver</a></button>
         </div>
 	</form>
       </div>

@@ -7,7 +7,7 @@ $jnoc(document).ready(function(){
 					},
 				messages: {
 				    passb: {
-						required : "Password Baru Harus diisi"
+						required : "La nueva contraseña debe ser completada"
 					}    
 				},
 				submitHandler: function(form) {
@@ -25,11 +25,11 @@ $jnoc(document).ready(function(){
 					success : function(respon){
 					if (respon==1){
 					$jnoc("#lproses").hide();
-					$jnoc('.error-text').text("Password Mikrotik SUKSES diganti");  
+					$jnoc('.error-text').text("La contraseña del Mikrotik cambió de manera exitosa");  
 					$jnoc("#myModal").modal("show");
 					} else if (respon==0) {
 					$jnoc("#lproses").hide();
-					$jnoc('.error-text').text("Password Mikrotik GAGAL diganti");  
+					$jnoc('.error-text').text("El cambio de contraseña del Mikrotik falló");  
 					$jnoc("#myModal").modal("show");
 					
 					}

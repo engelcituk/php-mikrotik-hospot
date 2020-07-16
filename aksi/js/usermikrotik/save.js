@@ -16,16 +16,16 @@ $jnoc(document).ready(function(){
 					},
 				messages: {
 				    nama: {
-						required : "Nama Harus diisi"
+						required : "Nombre debe ser llenado"
 					},
 				    group: {
-						required : "Group Harus dipilih"
+						required : "Un grupo debe ser seleccionado"
 					},				    
 					pass: {
-						required : "Password Harus diisi"
+						required : "La contraseña es requerida"
 					},
 				    ket: {
-						required : "Keterangan Harus diisi"
+						required : "La información es necesaria"
 					}					
 				},
 				submitHandler: function(form) {
@@ -49,11 +49,11 @@ $jnoc(document).ready(function(){
 					$jnoc("#group").val("-- Pilih --");
 					$jnoc("#ket").val("");
 					$jnoc("#lproses").hide();
-					$jnoc('.error-text').text("Data User Berhasil disimpan.");  
+					$jnoc('.error-text').text("Datos de usuario guardados correctamente");  
 					$jnoc("#myModal").modal("show");
 					} else if (respon==0) {
 					$jnoc("#lproses").hide();
-					$jnoc('.error-text').text("User GAGAL disimpan");  
+					$jnoc('.error-text').text("Fallo en el guardado del usuario");  
 					$jnoc("#myModal").modal("show");
 					
 					}

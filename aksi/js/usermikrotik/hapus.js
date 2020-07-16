@@ -14,7 +14,7 @@ $jnoc(document).ready(function(){
 					location.reload();
 				} else {
 					$jnoc("#lproses").hide();
-					$jnoc('.error-text').text("ada kesalahan saat proses hapus. cobalah beberapa saat lagi!"); 
+					$jnoc('.error-text').text("Hubo un error durante el proceso de eliminación. ¡Inténtalo de nuevo más tarde!"); 
 					exit();	
 				}
 				}
