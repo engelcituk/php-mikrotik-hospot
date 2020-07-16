@@ -3,7 +3,7 @@
 		$judul = "Editar";
 		$id = $_GET['id'];
 		$aksi = "update";
-		$button = "Update";
+		$button = "Actualizar";
 	    $API->write("/ip/hotspot/user/profile/print",false);   
 	    $API->write("?.id=".$id,true);   
 	    $p = $API->read(); 
@@ -32,7 +32,7 @@
 	}
 ?>
 <div class="span9">
-       <h3 class="page-title"><?php echo $judul; ?> grupo de límite de ancho de banda Hotspot</h3>
+       <h3 class="page-title"><?php echo $judul; ?> grupo límite de ancho de banda Hotspot</h3>
 
 <div class="well">
 

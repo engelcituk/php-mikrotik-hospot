@@ -14,7 +14,7 @@ $jnoc(document).ready(function(){
 					location.reload();
 				} else {
 					$jnoc("#lproses").hide();
-					$jnoc('.error-text').text("ada kesalahan saat proses hapus. cobalah beberapa saat lagi!"); 
+					$jnoc('.error-text').text("Hubo un error durante el proceso de eliminación. ¡Inténtalo de nuevo más tarde!"); 
 					exit();	
 				}
 				}
@@ -27,10 +27,10 @@ $jnoc(document).ready(function(){
 		var id = isi.attr("id");
 		var nama = isi.attr("svn");
 		if (id=="*0"){ 
-		$jnoc('.error-text').text("Maaf, group limitasi '"+nama+"' tidak boleh dihapus"); 
+		$jnoc('.error-text').text("Lo sentimos, el grupo de restricción de "+nama+"' no se puede eliminar"); 
 		$jnoc("#hapus").hide(); 
 		} else { 
-		$jnoc('.error-text').text("anda yakin akan menghapus group limitasi '"+nama+"' ini?"); 
+		$jnoc('.error-text').text("¿Estás seguro de que deseas eliminar este grupo de limitación de '"+nama+"'?"); 
 		$jnoc("#hapus").show(); 
 		}
 		$jnoc("#idnya").val(id);  			

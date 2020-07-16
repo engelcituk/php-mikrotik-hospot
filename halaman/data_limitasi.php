@@ -3,7 +3,7 @@
 	$g = $API->read(); 
 ?>
 <div class="span9">
-            <h3 class="page-title">Daftar Group Limitasi Bandwidth Hotspot</h3>
+            <h3 class="page-title">Lista de grupos de limitación de ancho de banda Hotspot</h3>
 
 <div class="well">
 <?php if (count($g)>=1) {?>
@@ -11,10 +11,10 @@
       <thead>
         <tr>
           <th>No</th>
-          <th>Nama Group</th>
-          <th>Jml Pengguna (Shared User)</th>
-          <th>Rate Limit (Rx/Tx)</th>
-          <th style="width: 26px;">Aksi</th>
+          <th>Nombre grupo</th>
+          <th>Núm. usuarios (usuarios compartidos)</th>
+          <th>Límite velocidad (Rx/Tx)</th>
+          <th style="width: 26px;">Acciones</th>
         </tr>
       </thead>
       <tbody>
@@ -48,15 +48,15 @@
 <div class="modal small hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="myModalLabel">Konfirmasi</h3>
+        <h3 id="myModalLabel">Confirmación</h3>
     </div>
     <div class="modal-body">
 		<input type="hidden" id="idnya" name="idnya"/>
         <p class="error-text"></p>
     </div>
     <div class="modal-footer">
-        <button class="btn" data-dismiss="modal" aria-hidden="true">Batal</button>
-        <button class="btn btn-danger" id="hapus">Hapus!</button>
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancelar</button>
+        <button class="btn btn-danger" id="hapus">¡Eliminar!</button>
 		<img src="images/loading.gif" id="lproses" class="load"/>
     </div>
 </div>

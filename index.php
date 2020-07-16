@@ -62,7 +62,7 @@
 						<li ><a href="index.php?halaman=tambah_user_hotspot">Agregar Usuario Hotspot</a></li>
                     </ul>
 
-                <div class="nav-header" data-toggle="collapse" data-target="#settings-menu"><i class="icon-dashboard"></i>Punto de acceso de ancho de banda de límite de grupo</div>
+                <div class="nav-header" data-toggle="collapse" data-target="#settings-menu"><i class="icon-dashboard"></i>Grupo límite de ancho de banda Hotspot</div>
                 <ul id="settings-menu" class="nav nav-list collapse in">
                   <li ><a href="index.php?halaman=tambah_group_limitasi">Agregar grupo de límite de ancho de banda</a></li>
                   <li ><a href="index.php?halaman=daftar_group_limitasi">Lista de grupos de limitación de ancho de banda</a></li>
