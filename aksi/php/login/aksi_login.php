@@ -17,7 +17,7 @@
 	} else {	
 	$_SESSION['user']=$user;
 	$konek = 'koneksi.php';
-	$handle = fopen("../../../penting/".$konek, 'w') or die('Tidak Bisa Membuka File '.$konek);
+	$handle = fopen("../../../penting/".$konek, 'w') or die('No puede abrir el archivo '.$konek);
 	$data = '
 	<?php 
 		 include("routeros_api.php");

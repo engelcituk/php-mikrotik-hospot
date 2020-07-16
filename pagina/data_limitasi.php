@@ -27,7 +27,7 @@
           <td><?php echo $tampil['shared-users']; ?></td>
           <td><?php echo $tampil['rate-limit']; ?></td>
           <td>
-              <a href="index.php?halaman=edit_group_limitasi&id=<?php echo $tampil['.id']; ?>"><i class="icon-pencil"></i></a>
+              <a href="index.php?pagina=editar-grupo-limite-ancho-banda-hotspot&id=<?php echo $tampil['.id']; ?>"><i class="icon-pencil"></i></a>
               <a href="#" id="<?php echo $tampil['.id']; ?>" svn="<?php echo $tampil['name']; ?>" class="hapus" role="button" data-toggle="modal"><i class="icon-trash"></i></a>
           </td>
         </tr>
@@ -38,7 +38,7 @@
 		?>
       </tbody>
     </table>
-	<?php } else {echo "<b style='color:red'>Data Group Limitasi Bandwidth Hotspot Tidak ada <a href='index.php' title='Klik Untuk Kembali ke Halaman Utama'>Kembali</a></b>";} ?>
+	<?php } else {echo "<b style='color:red'>Ninguna Limitación del ancho de banda del punto de acceso del grupo de datos<a href='index.php' title='Haga clic para volver a la página principal'>Volver</a></b>";} ?>
 </div>
 
 </div>

@@ -5,7 +5,7 @@
 <div class="span9">
             <h3 class="page-title">Lista de usuarios de Mikrotik</h3>
 <div class="btn-toolbar">
-    <button class="btn btn-success"><a href="index.php?halaman=tambah_user_mikrotik" style="color:white">Agregar usuario [+]</a></button>
+    <button class="btn btn-success"><a href="index.php?pagina=agregar-usuario-mikrotik" style="color:white">Agregar usuario [+]</a></button>
   <div class="btn-group">
   </div>
 </div>
@@ -42,7 +42,7 @@
 		?>
 	  </tbody>
     </table>
-	<?php } else {echo "<b style='color:red'>Data User Mikrotik Tidak ada <a href='index.php' title='Haga clic para volver a la página principal'>Volver</a></b>";} ?>
+	<?php } else {echo "<b style='color:red'>Ningun dato de usuario de Mikrotik<a href='index.php' title='Haga clic para volver a la página principal'>Volver</a></b>";} ?>
 </div>
 
 

@@ -36,7 +36,7 @@
                         </a>
 
                         <ul class="dropdown-menu">
-                            <li><a tabindex="-1" href="index.php?halaman=profile">Perfil usuario</a></li>
+                            <li><a tabindex="-1" href="index.php?pagina=profile">Perfil usuario</a></li>
                             <li class="divider"></li>
                             <li><a tabindex="-1" href="logout.php">Salir</a></li>
                         </ul>
@@ -56,51 +56,51 @@
                 <div class="sidebar-nav">
                   <div class="nav-header" data-toggle="collapse" data-target="#dashboard-menu"><i class="icon-user"></i>Generar usuario Hotspot</div>
                     <ul id="dashboard-menu" class="nav nav-list collapse in">
-                        <li><a href="index.php?halaman=daftar_user_hotspot">Lista de usuarios Hotspot</a></li>
-                        <li ><a href="index.php?halaman=daftar_user_aktif">Lista de usuarios actualmente activos</a></li>
-                        <li ><a href="index.php?halaman=generate_user_hotspot">Generar usuarios Hotspot</a></li>
-						<li ><a href="index.php?halaman=tambah_user_hotspot">Agregar Usuario Hotspot</a></li>
+                        <li><a href="index.php?pagina=lista-usuarios-hotspot">Lista de usuarios Hotspot</a></li>
+                        <li ><a href="index.php?pagina=lista-usuarios-activos">Lista de usuarios actualmente activos</a></li>
+                        <li ><a href="index.php?pagina=generar-usuarios-hotspot">Generar usuarios Hotspot</a></li>
+						<li ><a href="index.php?pagina=agregar-usuario-hotspot">Agregar Usuario Hotspot</a></li>
                     </ul>
 
                 <div class="nav-header" data-toggle="collapse" data-target="#settings-menu"><i class="icon-dashboard"></i>Grupo límite de ancho de banda Hotspot</div>
                 <ul id="settings-menu" class="nav nav-list collapse in">
-                  <li ><a href="index.php?halaman=tambah_group_limitasi">Agregar grupo de límite de ancho de banda</a></li>
-                  <li ><a href="index.php?halaman=daftar_group_limitasi">Lista de grupos de limitación de ancho de banda</a></li>
+                  <li ><a href="index.php?pagina=agregar-grupo-limite-ancho-banda-hotspot">Agregar grupo de límite de ancho de banda</a></li>
+                  <li ><a href="index.php?pagina=lista-grupo-limite-ancho-banda-hotspot">Lista de grupos de limite de ancho de banda</a></li>
                 </ul>
 				
 				<div class="nav-header" data-toggle="collapse" data-target="#accounts-menu"><i class="icon-wrench"></i>Menú extra</div>
                 <ul id="accounts-menu" class="nav nav-list collapse in">
-                  <li ><a href="index.php?halaman=daftar_user_mikrotik">Lista de usuarios Mikrotik</a></li>
-                  <li ><a href="index.php?halaman=edit_password_mikrotik">Editar contraseña Mikrotik</a></li>
-                  <li ><a href="index.php?halaman=edit_identity_mikrotik">Editar identidad Mikrotik</a></li>
+                  <li ><a href="index.php?pagina=lista-usuarios-mikrotik">Lista de usuarios Mikrotik</a></li>
+                  <li ><a href="index.php?pagina=editar-password-mikrotik">Editar contraseña Mikrotik</a></li>
+                  <li ><a href="index.php?pagina=editar-identidad-mikrotik">Editar identidad Mikrotik</a></li>
                   <li ><a href="#ModalReboot" role="button" data-toggle="modal">Reiniciar Mikrotik</a></li>
                 </ul>
 
-
+                
             </div>
         </div>
       
 	  <?php 
 
-			@$hal=$_GET['halaman'];
-			if(!$hal){ include "halaman/utama.php"; }
+			@$hal=$_GET['pagina'];
+			if(!$hal){ include "pagina/utama.php"; }
 			else {
 			switch($hal){
-			case "daftar_user_hotspot" : include "halaman/data_user_hotspot.php"; break;
-			case "daftar_user_mikrotik" : include "halaman/data_user_mikrotik.php"; break;
-			case "daftar_group_limitasi" : include "halaman/data_limitasi.php"; break;
-			case "daftar_user_aktif" : include "halaman/data_user_aktif.php"; break;
-			case "tambah_user_hotspot" : include "halaman/tambah_user_hotspot.php"; break;
-			case "edit_user_hotspot" : include "halaman/tambah_user_hotspot.php"; break;
-			case "tambah_user_mikrotik" : include "halaman/tambah_user_mikrotik.php"; break;
-			case "generate_user_hotspot" : include "halaman/generate_user_hotspot.php"; break;
-			case "tambah_group_limitasi" : include "halaman/tambah_group_limitasi.php"; break;
-			case "edit_group_limitasi" : include "halaman/tambah_group_limitasi.php"; break;
-			case "edit_password_mikrotik" : include "halaman/edit_password_mikrotik.php"; break;
-			case "edit_identity_mikrotik" : include "halaman/edit_identity_mikrotik.php"; break;
-			case "reboot_mikrotik" : include "halaman/reboot_mikrotik.php"; break;
-			case "profile" : include "halaman/profile.php"; break;
-			default : include "halaman/utama.php"; break;
+			case "lista-usuarios-hotspot" : include "pagina/data_user_hotspot.php"; break;
+			case "lista-usuarios-mikrotik" : include "pagina/data_user_mikrotik.php"; break;
+			case "lista-grupo-limite-ancho-banda-hotspot" : include "pagina/data_limitasi.php"; break;
+			case "lista-usuarios-activos" : include "pagina/data_user_aktif.php"; break;
+			case "agregar-usuario-hotspot" : include "pagina/tambah_user_hotspot.php"; break;
+			case "editar-usuario-hotspot" : include "pagina/tambah_user_hotspot.php"; break;
+			case "agregar-usuario-mikrotik" : include "pagina/tambah_user_mikrotik.php"; break;
+			case "generar-usuarios-hotspot" : include "pagina/generate_user_hotspot.php"; break;
+			case "agregar-grupo-limite-ancho-banda-hotspot" : include "pagina/tambah_group_limitasi.php"; break;
+			case "editar-grupo-limite-ancho-banda-hotspot" : include "pagina/tambah_group_limitasi.php"; break;
+			case "editar-password-mikrotik" : include "pagina/edit_password_mikrotik.php"; break;
+			case "editar-identidad-mikrotik" : include "pagina/edit_identity_mikrotik.php"; break;
+			case "reboot_mikrotik" : include "pagina/reboot_mikrotik.php"; break;
+			case "profile" : include "pagina/profile.php"; break;
+			default : include "pagina/utama.php"; break;
 			}
 			}
 		?>

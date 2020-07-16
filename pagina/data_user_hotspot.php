@@ -74,7 +74,7 @@
       <?php 
 			$banyakData = count($uh);  
 			
-  		    $page = isset($_GET['data_ke']) ? $_GET['data_ke'] : 0;
+  		    $page = isset($_GET['datos-a']) ? $_GET['datos-a'] : 0;
 			
 			$no = 1;
 			$limit = 10;  
@@ -114,7 +114,7 @@
 					<td><?php echo $tampil['comment']; ?></td>
 					<td><?php echo $tampil['uptime']; ?></td>
 					<td>
-						<a href="index.php?halaman=edit_user_hotspot&id=<?php echo $tampil['.id']; ?>" title="Edit User"><i class="icon-pencil"></i></a>
+						<a href="index.php?pagina=edit_user_hotspot&id=<?php echo $tampil['.id']; ?>" title="Edit User"><i class="icon-pencil"></i></a>
 						<a href="#" id="<?php echo $tampil['.id']; ?>" svn="<?php echo $tampil['name']; ?>" class="hapus" role="button" data-toggle="modal" title="Hapus User"><i class="icon-trash"></i></a>
 						<a href="#" id="<?php echo $tampil['.id']; ?>" svn="<?php echo $tampil['name']; ?>" class="ccounter" role="button" data-toggle="modal" title="Clear Counter"><i class="icon-remove"></i></a>
 					</td>
@@ -133,7 +133,7 @@
 					<td><?php echo $tampil['comment']; ?></td>
 					<td><?php echo $tampil['uptime']; ?></td>
 					<td>
-					  <a href="index.php?halaman=edit_user_hotspot&id=<?php echo $tampil['.id']; ?>"><i class="icon-pencil" title="Edit User"></i></a>
+					  <a href="index.php?pagina=editar-usuario-hotspot&id=<?php echo $tampil['.id']; ?>"><i class="icon-pencil" title="Edit User"></i></a>
 					  <a href="#" id="<?php echo $tampil['.id']; ?>" svn="<?php echo $tampil['name']; ?>" class="hapus" role="button" data-toggle="modal" title="Hapus User"><i class="icon-trash"></i></a>
 					  <a href="#" id="<?php echo $tampil['.id']; ?>" svn="<?php echo $tampil['name']; ?>" class="ccounter" role="button" data-toggle="modal" title="Clear Counter"><i class="icon-remove"></i></a>
 					</td>					
@@ -164,13 +164,13 @@
 						
 							echo "<a class='page";
 							if ($page == $i){ echo "active"; }
-							echo "$aktif' href='index.php?halaman=daftar_user_hotspot&data_ke=".$i."'>".$i."</a>";
+							echo "$aktif' href='index.php?pagina=lista-usuarios-hotspot&datos-a=".$i."'>".$i."</a>";
 						
 						} else {   
 						
 							echo "<a class='page";
 							if ($page == $i){ echo " active"; }
-							echo "$aktif' href='index.php?halaman=daftar_user_hotspot&data_ke=".$i."'>".$i."</a>";
+							echo "$aktif' href='index.php?pagina=lista-usuarios-hotspot&datos-a=".$i."'>".$i."</a>";
 
 						}  
 				}	
