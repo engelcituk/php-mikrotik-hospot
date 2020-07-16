@@ -1,7 +1,7 @@
 <?php
     require_once("../../../penting/koneksi.php");
 	
-	if ($_POST['aksi']=="save"){
+	if ($_POST['aksi']=="guardar"){
 	
 	$pass = $_POST['pass'];
 	$user = $_POST['user'];

@@ -70,11 +70,11 @@ $jnoc(document).ready(function(){
 					$jnoc("#ket").val("");
 				//	$jnoc("#lwaktu").val("");
 					$jnoc("#lproses").hide();
-					$jnoc('.error-text').text("Data User Hotspot Berhasil disimpan.");  
+					$jnoc('.error-text').text("Datos de usuario Hotspot guardados correctamente.");  
 					$jnoc("#myModal").modal("show");
 					} else if (respon==0) {
 					$jnoc("#lproses").hide();
-					$jnoc('.error-text').text("User Hotspot GAGAL disimpan");  
+					$jnoc('.error-text').text("Falló el guardado del Usuario Hotspot");  
 					$jnoc("#myModal").modal("show");
 					
 					}
