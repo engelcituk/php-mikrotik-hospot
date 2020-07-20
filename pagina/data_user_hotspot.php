@@ -25,7 +25,9 @@
 <div class="btn-toolbar">
     <button class="btn btn-primary export"> Exportar Usuarios (*.xls)</button>
     <button class="btn cetak">Impresión de Usuarios (*.pdf)</button>
-    <button class="btn btn-danger resetc">Limpiar contador</button>
+<!--     <button class="btn" onclick="test()">(*.pdf test)</button>
+ -->		<button class="btn btn-danger resetc">Limpiar contador</button>
+		
     <button class="btn btn-warning hapussuser">Eliminar todos los usuarios</button>
 	<img src="images/loading.gif" id="lprosesc" class="load" style="padding-left:10px">
   <div class="btn-group">
@@ -147,7 +149,7 @@
 			$API->disconnect();
 			?>
       </tbody>
-    </table>
+    </table> 
 	
 		<?php } else { echo "<b style='color:red'>Data User Hotspot Tidak ada <a href='index.php' title='Klik Untuk Kembali ke Halaman Utama'>Kembali</a></b>";} ?>
 </div>

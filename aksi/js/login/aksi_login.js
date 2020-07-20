@@ -23,7 +23,7 @@ $jnoc(document).ready(function(){
 				var user = $jnoc("#user").val();
 				var pass = $jnoc("#pass").val();
 				
-				$jnoc.ajax({
+				$jnoc.ajax({ 
 					url: "aksi/php/login/aksi_login.php", 
 					type:"POST",
 					data: { aksi:"login",ip:ip,pass:pass,user:user },

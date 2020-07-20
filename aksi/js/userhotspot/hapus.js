@@ -191,4 +191,10 @@ $jnoc(document).ready(function(){
 				}
 			});
 	});
-});
+}); 
+
+function test() {
+	
+	window.open('penting/pdf_export2.php', '_blank');
+
+}
