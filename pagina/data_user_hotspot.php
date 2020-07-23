@@ -24,9 +24,9 @@
 <?php if (count($uh)>=1) {?>
 <div class="btn-toolbar">
     <button class="btn btn-primary export"> Exportar Usuarios (*.xls)</button>
-    <button class="btn cetak">Impresión de Usuarios (*.pdf)</button>
-<!--     <button class="btn" onclick="test()">(*.pdf test)</button>
- -->		<button class="btn btn-danger resetc">Limpiar contador</button>
+		<button class="btn cetak">Impresión de Usuarios (*.pdf)</button>
+		<button class="btn" onclick="test()">Vouchers</button>
+ 		<button class="btn btn-danger resetc">Limpiar contador</button>
 		
     <button class="btn btn-warning hapussuser">Eliminar todos los usuarios</button>
 	<img src="images/loading.gif" id="lprosesc" class="load" style="padding-left:10px">
