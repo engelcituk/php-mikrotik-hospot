@@ -45,7 +45,7 @@ $numero = 4;
                                         </tr>                           
                                         <tr>                              
                                             <td ><b>'.$contador.'</b></td>                              
-                                            <td><b> '.$uh[$i]["u_actualProfileName"].'</b></td>                              
+                                            <td><b> '.$uh[$i]["profile"].'</b></td>                              
                                             <td>Ilimitados</td>                   
                                         </tr>                       
                                     </tbody>                  
