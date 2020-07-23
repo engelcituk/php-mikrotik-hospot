@@ -55,7 +55,7 @@
 			<option value="100">100 Usuarios</option>
 			<option value="200">200 Usuarios</option>
 			<option value="250">250 Usuarios</option>
-			<option value="300">300 Usuarios</option>
+			<option value="300">300 Usuarios</option> 
 			<option value="500">500 Usuarios</option>
 			<option value="1000">1000 Usuarios</option>
 		</select>	

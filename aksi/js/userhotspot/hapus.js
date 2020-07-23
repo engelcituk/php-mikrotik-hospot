@@ -140,7 +140,7 @@ $jnoc(document).ready(function(){
 					var win = window.open('penting/excel_export.php', '_blank');
 					if(win){
 					win.focus();
-					}else{
+					}else{ 
 					document.getElementById("popup").click();
 					}
 				} else {

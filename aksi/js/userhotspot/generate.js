@@ -58,7 +58,7 @@ $jnoc(document).ready(function(){
 				var satuan = $jnoc("#satuan").val();
 				var ket = $jnoc("#ket").val();
 				var juser = $jnoc("#juser").val();
-				
+				 
 				$jnoc.ajax({
 					url: "aksi/php/userhotspot/generate.php", 
 					type:"POST",
@@ -66,7 +66,10 @@ $jnoc(document).ready(function(){
 					dataType:"json",
 					chache: false,
 					success : function(respon){
-					if (respon==1){
+						respuesta = respon.respuesta;
+						data = respon.data;
+					if (respuesta==1){
+						console.log(data);
 					$jnoc("#puser").val("-- Seleccione --");
 					$jnoc("#ppass").val("-- Seleccione --");
 					$jnoc("#glimit").val("-- Seleccione --");
@@ -77,7 +80,8 @@ $jnoc(document).ready(function(){
 					$jnoc("#lproses").hide();
 					$jnoc('.error-text').text("La generación de datos de "+juser+" usuarios Hotspot fue exitosa.");  
 					$jnoc("#myModal").modal("show");
-					} else if (respon==0) {
+					showVouchers(data);
+					} else if (respuesta==0) {
 					$jnoc("#lproses").hide();
 					$jnoc('.error-text').text("User Hotspot GAGAL digenerate");  
 					$jnoc("#myModal").modal("show");
@@ -88,3 +92,19 @@ $jnoc(document).ready(function(){
 			}
 	});	
 });
+
+function showVouchers(data) {
+	data = JSON.stringify(data);
+	window.open('penting/tickets.php?datos='+data, '_blank');
+	 /* $jnoc.ajax({
+		url: "penting/tickets.php", 
+		type:"POST",
+		data: {datos: data},
+		dataType:"json",
+		chache: false,
+		success : function(respon){
+			window.open('penting/tickets.php', '_blank');
+		}
+	}); */ 
+	
+}

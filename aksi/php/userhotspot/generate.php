@@ -2,11 +2,12 @@
     require_once("../../../penting/koneksi.php");
 	
 	$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    $charactersLength = strlen($characters);
-
+	$charactersLength = strlen($characters);
+	
     $randomUser = '';
     $randomPass = '';
- 
+
+	$data = array();
 	if ($_POST['aksi']=="generate"){
 	
 	$ppass = $_POST['ppass'];
@@ -54,13 +55,15 @@
 	  $API->write("=limit-uptime=".$uptime,false);		
 	  $API->write("=comment=".$ket,true);	
 	  $API->read();
-	  
+	  $data[]= ['name'=>$randomUser,'password'=>$randomPass, 'profile'=>$glimit,'limitUptime'=>$uptime, 'comment'=>$ket];
 	  $randomUser = '';
 	  $randomPass = '';
+
   
 	}
-	
-	echo "1";
+	$respuesta = array('respuesta' => 1, "data"=>$data); // regreso un array  json para leer desde js y mandarlo a procesar en php
+	echo json_encode($respuesta);
 	
 	}
 ?>
+ 
