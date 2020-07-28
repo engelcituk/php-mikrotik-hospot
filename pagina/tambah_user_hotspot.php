@@ -80,7 +80,7 @@
         <div style="padding-top:20px">
             <input class="btn btn-primary" id="simpan" type="submit" value="<?php echo $button; ?> Usuario Hotspot">
 			<img src="images/loading.gif" id="lproses" class="load"/>
-			<button class="btn"><a href="index.php?halaman=daftar_user_hotspot" style="color:black">Volver</a></button>
+			<button class="btn"><a href="index.php?pagina=daftar_user_hotspot" style="color:black">Volver</a></button>
 		</div>
 	</form>
       </div>

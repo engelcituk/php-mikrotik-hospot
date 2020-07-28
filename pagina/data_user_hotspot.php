@@ -98,7 +98,7 @@
 					<td><?php echo $tampil['comment']; ?></td>
 					<td><?php echo $tampil['uptime']; ?></td>
 					<td>
-						<a href="index.php?halaman=edit_user_hotspot&id=<?php echo $tampil['.id']; ?>" title="Edit User"><i class="icon-pencil"></i></a>
+						<a href="index.php?pagina=editar-usuario-hotspot&id=<?php echo $tampil['.id']; ?>" title="Edit User"><i class="icon-pencil"></i></a>
 						<a href="#" id="<?php echo $tampil['.id']; ?>" svn="<?php echo $tampil['name']; ?>" class="hapus" role="button" data-toggle="modal" title="Hapus User"><i class="icon-trash"></i></a>
 						<a href="#" id="<?php echo $tampil['.id']; ?>" svn="<?php echo $tampil['name']; ?>" class="ccounter" role="button" data-toggle="modal" title="Clear Counter"><i class="icon-remove"></i></a>
 					</td>
@@ -116,7 +116,7 @@
 					<td><?php echo $tampil['comment']; ?></td>
 					<td><?php echo $tampil['uptime']; ?></td>
 					<td>
-						<a href="index.php?pagina=edit_user_hotspot&id=<?php echo $tampil['.id']; ?>" title="Edit User"><i class="icon-pencil"></i></a>
+						<a href="index.php?pagina=editar-usuario-hotspot&id=<?php echo $tampil['.id']; ?>" title="Edit User"><i class="icon-pencil"></i></a>
 						<a href="#" id="<?php echo $tampil['.id']; ?>" svn="<?php echo $tampil['name']; ?>" class="hapus" role="button" data-toggle="modal" title="Hapus User"><i class="icon-trash"></i></a>
 						<a href="#" id="<?php echo $tampil['.id']; ?>" svn="<?php echo $tampil['name']; ?>" class="ccounter" role="button" data-toggle="modal" title="Clear Counter"><i class="icon-remove"></i></a>
 					</td>
